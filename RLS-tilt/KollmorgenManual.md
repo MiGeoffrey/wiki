@@ -27,8 +27,9 @@ The Kollmorgen motor is a step motor. It is attached to a reductor.
 - 10000 step = 1 round
 - reduction factor : 1/60 round
 - J gives round per minute (rpm)
-- ex : J100 = 100 rpm
+- ex : J 100 = 100 rpm
 
 The total gain depends of the Crankshaft (Système bielle-manivelle, Biela-manivela, Kurbelwelle). One position of the motor axis allows a gain of 1, the other one transform the rotation into a sinusoïd.
 
-In total, J60 gives 1 rpm for the lightsheet, J360 gives 1 Hz.
+- Theory : In total, J 60 gives 1 rpm for the lightsheet, J 360 gives 1 Hz.
+- Measured : J 1000 yields 1 round in 3.6 s (16.67 rpm, 0.2778 Hz)
