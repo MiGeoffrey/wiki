@@ -98,6 +98,8 @@ $$
 
 The arrow point the pixel presented above.
 
+[see video](./img/neuron_sinus.webm)
+
 <video src="./img/neuron_sinus.webm" autoplay></video>
 
 ![phasemap](./img/phaseMap.png)
