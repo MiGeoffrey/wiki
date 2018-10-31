@@ -70,3 +70,37 @@ The DFF is computed with the formula :
 
 
 
+### Phasemap computation
+
+For a sinus stimulus, we compute a "phasemap" as follows:
+
+Example of the dff for a pixel in a neuron which has a strong response :
+
+![dff](./img/pixel-activity.png)
+
+We compute the dff discrete Fourier Transform (fft algorithm) for each pixel.
+
+Example for the pixel above :
+
+![fftdff](./img/pixel-fft.png)
+
+Then we take the complex value of the signal at the stimulus frequency and the mean absolute value on an arbitrary window around.
+
+![fftdff](./img/peak_detail.svg)
+
+
+
+Here the peak value is $r e^{i \varphi}$ with r = 577.5905 and phi = 2.1885. For the phasemap, we plot for each pixel a color phi with an amplitude
+$$
+A = \frac{\text{signal}-\text{noise}}{\text{noise}}
+$$
+
+
+The arrow point the pixel presented above.
+
+<video src="./img/neuron_sinus.webm" autoplay></video>
+
+![phasemap](./img/phaseMap.png)
+
+
+
